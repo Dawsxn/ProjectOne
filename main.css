@@ -16,8 +16,8 @@ html, body {
 }
 
 .mainCard {
-    width: 1100px;
-    height: 400px;
+    width: 600px;
+    height: 200px;
     border-radius: 32px;
     display: flex;
     justify-content: center;

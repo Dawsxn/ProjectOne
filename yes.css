@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #121212, #3b0000, #1a0000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCard {
+    width: 1200px;
+    height: 650px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideUp 1s ease-out; /* Slide-up animation */
+    gap: 32px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    gap: 2.5%;
+    border-radius: 32px;
+
+    background-color: rgb(18, 18, 18, 0.7);
+    box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.85);
+}
+
+.image {
+    width: 70%;
+    height: auto;
+    border-radius: 32px;
+    opacity: 70%;
+    margin: 0;
+
+    /* Strong floating shadow effect */
+    box-shadow: 0px 30px 40px rgba(0,0,0, 0.9);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    border-radius: 32px;
+
+    background-color: rgb(18, 18, 18, 0.7);
+    box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.85);
+}
+
+#header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    color: #eee;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.subtext {
+    margin: 4px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #eee;
+}
+
+#subtext2 {
+    width: 70%;
+    margin: 8px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #eee;
+    text-align: center;
+}
+
+#clickButton {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(135deg, #8e1616, #3b0000);
+    color: #eee;
+    border: none;
+    border-radius: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0px 6px 12px 2px rgba(0, 0, 0, 0.85);
+    transition: all 0.25s ease;
+    margin-top: 8px;
+}
+
+#clickButton:hover {
+    background: linear-gradient(135deg, #9e2a2a, #5c0f0f);  
+    transform: scale(1.05);     
+    box-shadow: 0px 8px 16px 3px rgba(0, 0, 0, 0.8); 
+}
+
+#clickButton:active {
+    background: linear-gradient(135deg, #7d1414, #4a0b0b); 
+    transform: scale(0.98);      
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.75); 
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%); /* Start from below */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

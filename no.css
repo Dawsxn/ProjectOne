@@ -80,3 +80,85 @@ html, body {
         opacity: 1;
     }
 }
+
+@media (max-width: 1200px) {
+    .mainCard {
+        width: 800px;
+        height: 500px;
+    }
+
+    .choices {
+        width: 240px;
+        height: 70px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 840px) {
+    .mainCard {
+        width: 700px;
+        height: 300px;
+    }
+
+    .choices {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 720px) {
+    .mainCard {
+        width: 600px;
+        height: 250px;
+    }
+
+    .choices {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #header {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .mainCard {
+        width: 400px;
+        height: 300px;
+    }
+
+    .choices {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 420px) {
+    .mainCard {
+        width: 300px;
+        height: 250px;
+    }
+
+    .choices {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #header {
+        font-size: 16px;
+    }
+}
